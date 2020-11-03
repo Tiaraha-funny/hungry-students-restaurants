@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hungry Students Restaurant</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><em>Hungry Student</em> Restaurant</h1>
+      <section>
+        <h2>Food List</h2>
+        <section class="filters">
+          <span><b> Filter by : </b></span>
+          <fieldset>
+            <input type="checkbox" id="spicy" value="spicy" />
+            <label for="spicy">Spicy</label>
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" id="vegetarian" value="vegetarian" />
+            <label for="vegetarian">Vegetarian</label>
+          </fieldset>
+        </section>
+        <ul class="food-list"></ul>
+      </section>
+      <section class="order">
+        <h2>Your order</h2>
+        <ul class="order-list"></ul>
+        <p class="total-list">Total : <span class="total"></span></p>
+      </section>
+      <button class="confirm">Confirm Order</button>
+    </div>
+    <div class="modal-outer">
+      <div class="modal-inner"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
